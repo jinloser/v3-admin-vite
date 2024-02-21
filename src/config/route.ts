@@ -22,7 +22,7 @@ interface RouteSettings {
 const routeSettings: RouteSettings = {
   async: true,
   defaultRoles: ["DEFAULT_ROLE"],
-  thirdLevelRouteCache: false
+  thirdLevelRouteCache: true
 }
 
 export default routeSettings

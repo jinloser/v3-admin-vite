@@ -66,16 +66,14 @@ const createCode = () => {
 }
 
 /** 初始化验证码 */
-createCode()
+// createCode()
 </script>
 
 <template>
   <div class="login-container">
     <ThemeSwitch class="theme-switch" />
     <div class="login-card">
-      <div class="title">
-        <img src="@/assets/layouts/logo-text-2.png" />
-      </div>
+      <div class="title">通信电源远程运维管理平台</div>
       <div class="content">
         <el-form ref="loginFormRef" :model="loginFormData" :rules="loginFormRules" @keyup.enter="handleLogin">
           <el-form-item prop="username">
@@ -99,7 +97,7 @@ createCode()
               show-password
             />
           </el-form-item>
-          <el-form-item prop="code">
+          <!-- <el-form-item prop="code">
             <el-input
               v-model.trim="loginFormData.code"
               placeholder="验证码"
@@ -124,7 +122,7 @@ createCode()
                 </el-image>
               </template>
             </el-input>
-          </el-form-item>
+          </el-form-item> -->
           <el-button :loading="loading" type="primary" size="large" @click.prevent="handleLogin">登 录</el-button>
         </el-form>
       </div>
@@ -155,10 +153,8 @@ createCode()
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 150px;
-      img {
-        height: 100%;
-      }
+      height: 100px;
+      font-size: 20px;
     }
     .content {
       padding: 20px 50px 50px 50px;
